@@ -14,6 +14,12 @@ export default function Nav() {
       <Link href="/" className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}>
         Home
       </Link>
+      <Link href="/users" className={`${styles.navLink} ${pathname === "/users" ? styles.active : ""}`}>
+        Users
+      </Link>
+      <Link href="/users/create" className={`${styles.navLink} ${pathname === "/users/create" ? styles.active : ""}`}>
+        New User
+      </Link>
       <Link href="/posts" className={`${styles.navLink} ${pathname === "/posts" ? styles.active : ""}`}>
         Posts
       </Link>

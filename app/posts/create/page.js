@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export default function CreatePage() {
   const url = `${process.env.NEXT_PUBLIC_FB_DB_URL}/posts.json`; // Get Firebase Realtime Database URL
-
+  
   // Server Action to handle post creation
   async function createPost(formData) {
     "use server"; // Mark as server action - runs on server only
