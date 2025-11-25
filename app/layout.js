@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="bg-[#1a1a1a] text-[#ededed]">
         <Nav />
         {children}
       </body>

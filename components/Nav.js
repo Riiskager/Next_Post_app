@@ -10,20 +10,25 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.nav}>
-      <Link href="/" className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}>
+    <nav className="flex p-4 bg-gray-800 space-x-10 justify-center">
+  <Link href="/" className={`px-5 py-3 rounded-xl
+      ${pathname ==='/' ? "bg-[#1a1a1a]":"hover:bg-[#1a1a1a]"}`}>
         Home
       </Link>
-      <Link href="/users" className={`${styles.navLink} ${pathname === "/users" ? styles.active : ""}`}>
+      <Link href="/users" className={`px-5 py-3 rounded-xl
+      ${pathname ==='/users' ? "bg-[#1a1a1a]" : "hover:bg-[#1a1a1a]"}`}>
         Users
       </Link>
-      <Link href="/users/create" className={`${styles.navLink} ${pathname === "/users/create" ? styles.active : ""}`}>
+      <Link href="/users/create" className={`px-5 py-3 rounded-xl
+      ${pathname ==='/users/create' ? "bg-[#1a1a1a]" : "hover:bg-[#1a1a1a]"}`}>
         New User
       </Link>
-      <Link href="/posts" className={`${styles.navLink} ${pathname === "/posts" ? styles.active : ""}`}>
+      <Link href="/posts" className={`px-5 py-3 rounded-xl
+      ${pathname ==='/posts' ? "bg-[#1a1a1a]" : "hover:bg-[#1a1a1a]"}`}>
         Posts
       </Link>
-      <Link href="/posts/create" className={`${styles.navLink} ${pathname === "/posts/create" ? styles.active : ""}`}>
+      <Link href="/posts/create" className={`px-5 py-3 rounded-xl
+      ${pathname ==='/posts/create' ? "bg-[#1a1a1a]" : "hover:bg-[#1a1a1a]"}`}>
         New Post
       </Link>
     </nav>
